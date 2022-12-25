@@ -2,7 +2,8 @@
 What are the best rated Time Management books?
 
 ## Sorting by rating
-
+### Installation
+``` pip install -r requirements.txt ```
 ### Usage Example
 ``` python ./goodreads_sort.py https://www.goodreads.com/shelf/show/time-management ``` 
 #### Example Output
@@ -62,7 +63,8 @@ Parsing elements...
 4.26 Four Thousand Weeks: Time Management for Mortals (Hardcover)
 4.38 Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones (Kindle Edition)
 ```
-### How to improve?
+## How to improve?
 - Add filtering options (minimum votes for rating, minimum rating score)
+- Add sort options (by key, ascending \ descending)
 - Fix duplicated results (```python .\book_ratings.py https://www.goodreads.com/shelf/show/psychology``` has "4.28 Daring Greatly: How the Courage to Be Vulnerable Transforms the Way We Live, Love, Parent, and Lead (Hardcover) twice)
 - Login to account and Support lists such as "My Books"
