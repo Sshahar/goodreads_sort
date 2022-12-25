@@ -1,3 +1,6 @@
+"""
+Displays books sorted by rating from a GIVEN SHELF (URL)
+"""
 # Download html
 # Find book elements
 # Display book_name, book_rating (Sorted by rating)
