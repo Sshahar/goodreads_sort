@@ -2,15 +2,20 @@
 # Find book elements
 # Display book_name, book_rating (Sorted by rating)
 
+import sys
 import requests
+import validators
 from bs4 import BeautifulSoup as bs
+
+url = "https://www.goodreads.com/shelf/show/time-management"
+if len(sys.argv) > 1 and validators.url(sys.argv[1]):
+    url = sys.argv[1]
 
 pages = []
 
 # Download html pages
 print("Downloading HTML page...")
 
-url = "https://www.goodreads.com/shelf/show/time-management"
 r = requests.get(url)
 html_page = r.text
 
